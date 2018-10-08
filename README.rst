@@ -21,4 +21,4 @@ After that, you can call for the first time the configuration file as follows
 The second parameter is optional. It activates (or deactivates) the hot
 reloading of the configuration file each time a value is accessed.
 
-The Config class implements the singleton pattern.
+The class **Config** implements the singleton pattern.
