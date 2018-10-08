@@ -22,3 +22,9 @@ The second parameter is optional. It activates (or deactivates) the hot
 reloading of the configuration file each time a value is accessed.
 
 The class **Config** implements the singleton pattern.
+
+A value is accessed similarly a dictionary, in particular as follows
+
+.. code-block::
+
+    val = config["key_1/key_2/.../key_N"]
