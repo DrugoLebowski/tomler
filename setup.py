@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 import io
 import os
 
@@ -12,8 +11,8 @@ DESCRIPTION = 'A simple reader for TOML configuration files.'
 URL = 'https://github.com/DrugoLebowski/tomler'
 EMAIL = 'belli.valerio@gmail.com'
 AUTHOR = 'Valerio Belli'
-REQUIRES_PYTHON = '>=3.5.5'
-VERSION = 0.1
+REQUIRES_PYTHON = '>=3.5'
+VERSION = "0.1.1"
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -24,7 +23,7 @@ REQUIRED = [
 here = os.path.abspath(os.path.dirname(__file__))
 
 try:
-    with io.open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
+    with io.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
         long_description = '\n' + f.read()
 except FileNotFoundError:
     long_description = DESCRIPTION
@@ -43,7 +42,7 @@ setup(
     version=about['__version__'],
     description=DESCRIPTION,
     long_description=long_description,
-    long_description_content_type='text/reStructuredText',
+    long_description_content_type='text/x-rst',
     author=AUTHOR,
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
@@ -56,7 +55,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5.5',
+        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy'
     ],
